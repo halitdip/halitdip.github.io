@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detective Neo - Gizlilik Politikasi</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.7; padding: 20px; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { color: #A259FF; font-size: 28px; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 14px; margin-bottom: 32px; }
+    h2 { color: #3A86FF; font-size: 18px; margin: 28px 0 12px; border-bottom: 1px solid #222; padding-bottom: 6px; }
+    p, li { font-size: 15px; margin-bottom: 8px; }
+    ul { padding-left: 20px; }
+    a { color: #18FFFF; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #222; color: #666; font-size: 13px; }
+    .lang-switch { text-align: right; margin-bottom: 20px; }
+    .lang-switch a { margin-left: 12px; text-decoration: none; font-size: 14px; }
+    .section-en { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="#" onclick="showLang('tr')" id="btn-tr" style="color:#A259FF;font-weight:bold">Turkce</a>
+      <a href="#" onclick="showLang('en')" id="btn-en">English</a>
+    </div>
+
+    <!-- TURKCE -->
+    <div class="section-tr">
+      <h1>Gizlilik ve Cerez Politikasi</h1>
+      <p class="subtitle">Son guncelleme: Agustos 2026 &bull; Detective Neo</p>
+
+      <p>Bu Politika, Detective Neo uygulamasinin kisisel verilerinizi ve cerez kullanimini nasil yonettigini aciklamaktadir.</p>
+
+      <h2>1. Toplanan Veriler</h2>
+      <ul>
+        <li><strong>Hesap verileri:</strong> e-posta adresi, kullanici adi, ad-soyad, dogum tarihi, telefon numarasi, profil fotografi, biyografi.</li>
+        <li><strong>Teknik veriler:</strong> IP adresi, oturum acma zamani, platform, cihaz markasi ve modeli.</li>
+        <li><strong>Oyun verileri:</strong> acilan davalar, XP puani, oturum suresi.</li>
+        <li><strong>Reklam verileri:</strong> reklam gosterim ve etkilesim verileri, reklam tanimlayicilari (GAID/IDFA).</li>
+      </ul>
+
+      <h2>2. Verilerin Kullanim Amaci</h2>
+      <ul>
+        <li>Kimlik dogrulama ve hesap guvenliginin saglanmasi</li>
+        <li>Oyun ici ilerlemenizin kaydedilmesi ve senkronize edilmesi</li>
+        <li>Hizmet kesintileri ve guvenlik olaylarinin tespiti</li>
+        <li>Duyuru ve bildirim iletimi</li>
+        <li>Kisisellestirilmis reklam gosterimi ve reklam performans olcumu</li>
+      </ul>
+
+      <h2>3. Ucuncu Taraflarla Paylasim</h2>
+      <p>Asagidaki ucuncu taraf hizmet saglayicilari verilerinizi kendi gizlilik politikalari cercevesinde isler:</p>
+      <ul>
+        <li><strong>Google AdMob:</strong> Reklam gosterimi ve kisisellestirilmis reklamcilik. <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikasi</a></li>
+        <li><strong>Unity LevelPlay (ironSource):</strong> Reklam araciligi (mediation) ve reklam optimizasyonu. <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Gizlilik Politikasi</a></li>
+        <li><strong>Unity Ads:</strong> Reklam gosterimi. <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Gizlilik Politikasi</a></li>
+        <li><strong>RevenueCat:</strong> Satin alma islemlerinin guvenli bicimde islenmesi. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Gizlilik Politikasi</a></li>
+        <li><strong>Google OAuth:</strong> Google ile giris yapmaniz halinde temel profil bilgileriniz alinir.</li>
+        <li><strong>Firebase:</strong> Analizler, bildirimler, uygulama performansi ve cokme raporlari. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Gizlilik Bilgileri</a></li>
+        <li><strong>E-posta Hizmeti:</strong> Sifre sifirlama ve onemli bildirimler.</li>
+      </ul>
+
+      <h2>4. Reklam ve Riza (GDPR/AB Uyumu)</h2>
+      <p>Avrupa Ekonomik Alani (AEA), Birlesik Krallik ve Isvicre'deki kullanicilarimiz icin Google'in Kullanici Mesajlasma Platformu (UMP) araciligiyla riza topluyoruz. Kisisellestirilmis reklam gosterimi icin acik rizanizi aliriz. Rizanizi istediginiz zaman uygulama ayarlarindan yonetebilirsiniz.</p>
+      <p>Riza vermezseniz, size yalnizca kisisellestirilmemis reklamlar gosterilecektir.</p>
+
+      <h2>5. Yerel Depolama ve Cerezler</h2>
+      <p>Oturum jetonunuz (JWT) cihazinizda guvenli yerel depolama alaninda (AsyncStorage) saklanir. Reklam SDK'lari cihaz tanimlayicilari ve reklam tercihlerini yerel olarak saklayabilir.</p>
+
+      <h2>6. Veri Saklama Suresi</h2>
+      <p>Verileriniz, hesabiniz aktif oldugu sure boyunca saklanir. Hesap silme talebinin ardindan kisisel verileriniz 30 gun icinde sistemden kaldirilir; yasal yukumlulukler gerektirdiginde daha uzun sure saklanabilir.</p>
+
+      <h2>7. Uluslararasi Aktarim</h2>
+      <p>Hizmet altyapisi uluslararasi veri merkezlerinde barindirilabilir. Aktarimlar GDPR ve CCPA gibi uluslararasi standartlara uygun guvenlik onlemleriyle gerceklestirilir.</p>
+
+      <h2>8. Haklariniz</h2>
+      <p>Kisisel verilerinize erisim, duzeltme, silme veya tasinabilirlik talep etme hakkina sahipsiniz. GDPR kapsaminda rizanizi geri cekme ve veri islemesine itiraz etme haklariniz vardir.</p>
+      <p>Talepler icin: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
+
+      <h2>9. Cocuklarin Gizliligi</h2>
+      <p>Uygulamamiz 13 yasindan kucuk cocuklara yonelik degildir. Bilecek durumda oldigimuzda 13 yas altindan kisisel veri toplamayiz.</p>
+
+      <h2>10. Politika Degisiklikleri</h2>
+      <p>Bu politikayi zaman zaman guncelleyebiliriz. Onemli degisikliklerde uygulama ici bildirim gondeririz.</p>
+
+      <div class="footer">
+        <p>&copy; 2026 Detective Neo. Tum haklari saklidir.</p>
+        <p>Iletisim: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="section-en">
+      <h1>Privacy and Cookie Policy</h1>
+      <p class="subtitle">Last updated: August 2026 &bull; Detective Neo</p>
+
+      <p>This Policy explains how the Detective Neo application manages your personal data and cookie usage.</p>
+
+      <h2>1. Data We Collect</h2>
+      <ul>
+        <li><strong>Account data:</strong> email address, username, name, date of birth, phone number, profile photo, biography.</li>
+        <li><strong>Technical data:</strong> IP address, login time, platform, device brand and model.</li>
+        <li><strong>Game data:</strong> opened cases, XP points, session duration.</li>
+        <li><strong>Advertising data:</strong> ad impression and interaction data, advertising identifiers (GAID/IDFA).</li>
+      </ul>
+
+      <h2>2. How We Use Your Data</h2>
+      <ul>
+        <li>Authentication and account security</li>
+        <li>Saving and synchronizing your in-game progress</li>
+        <li>Detecting service interruptions and security incidents</li>
+        <li>Delivering announcements and notifications</li>
+        <li>Displaying personalized ads and measuring ad performance</li>
+      </ul>
+
+      <h2>3. Third-Party Sharing</h2>
+      <p>The following third-party service providers process your data under their own privacy policies:</p>
+      <ul>
+        <li><strong>Google AdMob:</strong> Ad serving and personalized advertising. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><strong>Unity LevelPlay (ironSource):</strong> Ad mediation and optimization. <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a></li>
+        <li><strong>Unity Ads:</strong> Ad serving. <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a></li>
+        <li><strong>RevenueCat:</strong> Secure processing of in-app purchases. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+        <li><strong>Google OAuth:</strong> Basic profile information when signing in with Google.</li>
+        <li><strong>Firebase:</strong> Analytics, push notifications, app performance, and crash reports. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Information</a></li>
+        <li><strong>Email Service:</strong> Password reset and important notifications.</li>
+      </ul>
+
+      <h2>4. Advertising and Consent (GDPR/EU Compliance)</h2>
+      <p>For users in the European Economic Area (EEA), United Kingdom, and Switzerland, we collect consent through Google's User Messaging Platform (UMP). We obtain your explicit consent before showing personalized ads. You can manage your consent at any time through the app settings.</p>
+      <p>If you do not consent, you will only be shown non-personalized ads.</p>
+
+      <h2>5. Local Storage and Cookies</h2>
+      <p>Your session token (JWT) is stored securely on your device (AsyncStorage). Ad SDKs may store device identifiers and advertising preferences locally.</p>
+
+      <h2>6. Data Retention</h2>
+      <p>Your data is retained as long as your account is active. After an account deletion request, your personal data will be removed within 30 days; data may be retained longer when required by law.</p>
+
+      <h2>7. International Transfers</h2>
+      <p>Our infrastructure may be hosted in international data centers. Transfers are carried out with security measures compliant with international standards such as GDPR and CCPA.</p>
+
+      <h2>8. Your Rights</h2>
+      <p>You have the right to access, correct, delete, or request portability of your personal data. Under GDPR, you have the right to withdraw consent and object to data processing.</p>
+      <p>For requests: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
+
+      <h2>9. Children's Privacy</h2>
+      <p>Our application is not intended for children under 13. We do not knowingly collect personal data from children under 13.</p>
+
+      <h2>10. Policy Changes</h2>
+      <p>We may update this policy from time to time. We will send in-app notifications for significant changes.</p>
+
+      <div class="footer">
+        <p>&copy; 2026 Detective Neo. All rights reserved.</p>
+        <p>Contact: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.querySelector('.section-tr').style.display = lang === 'tr' ? 'block' : 'none';
+      document.querySelector('.section-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-tr').style.color = lang === 'tr' ? '#A259FF' : '#18FFFF';
+      document.getElementById('btn-tr').style.fontWeight = lang === 'tr' ? 'bold' : 'normal';
+      document.getElementById('btn-en').style.color = lang === 'en' ? '#A259FF' : '#18FFFF';
+      document.getElementById('btn-en').style.fontWeight = lang === 'en' ? 'bold' : 'normal';
+    }
+  </script>
+</body>
+</html>
