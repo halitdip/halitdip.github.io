@@ -1,169 +1,328 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aquarium Neo - Gizlilik Politikası</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #06212e; color: #dfeef3; line-height: 1.7; padding: 20px; }
-    .container { max-width: 800px; margin: 0 auto; }
-    h1 { color: #ffd54a; font-size: 28px; margin-bottom: 8px; }
-    .subtitle { color: #8fb3c0; font-size: 14px; margin-bottom: 32px; }
-    h2 { color: #4fc3f7; font-size: 18px; margin: 28px 0 12px; border-bottom: 1px solid #12394a; padding-bottom: 6px; }
-    p, li { font-size: 15px; margin-bottom: 8px; }
-    ul { padding-left: 20px; }
-    a { color: #7fe3ff; }
-    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #12394a; color: #7a9aa6; font-size: 13px; }
-    .lang-switch { text-align: right; margin-bottom: 20px; }
-    .lang-switch a { margin-left: 12px; text-decoration: none; font-size: 14px; }
-    .section-en { display: none; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aquarium Neo — Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #fbfbfa; color: #1c1c1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #14171a; color: #e6e6e4; }
+    code, .box { background: #1e2328 !important; }
+    a { color: #7fd1e8; }
+  }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.4rem 0 .4rem; }
+  .sub { color: #6b6b66; margin: 0 0 2rem; font-size: .95rem; }
+  @media (prefers-color-scheme: dark) { .sub { color: #9a9a95; } }
+  table { border-collapse: collapse; width: 100%; margin: .8rem 0; font-size: .92rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.28); vertical-align: top; }
+  th { font-weight: 700; }
+  code { background: #eeeeec; padding: .1rem .35rem; border-radius: 4px; font-size: .88em; }
+  .box { background: #eeeeec; border-radius: 8px; padding: .9rem 1.1rem; margin: 1rem 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  hr { border: none; border-top: 1px solid rgba(128,128,128,.28); margin: 3rem 0 2rem; }
+  .lang { font-size: .9rem; margin-bottom: 1.5rem; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="lang-switch">
-      <a href="#" onclick="showLang('tr')" id="btn-tr" style="color:#ffd54a;font-weight:bold">Türkçe</a>
-      <a href="#" onclick="showLang('en')" id="btn-en">English</a>
-    </div>
 
-    <!-- TURKCE -->
-    <div class="section-tr">
-      <h1>Gizlilik Politikası</h1>
-      <p class="subtitle">Son güncelleme: Eylül 2026 &bull; Aquarium Neo</p>
+<p class="lang"><strong>Türkçe</strong> · <a href="#english">English</a></p>
 
-      <p>Bu politika, Aquarium Neo mobil oyununun ("Uygulama") hangi verileri topladığını, bunları nasıl kullandığını ve haklarınızı açıklar.</p>
+<h1>Aquarium Neo — Gizlilik Politikası</h1>
+<p class="sub">Son güncelleme: 23 Eylül 2026</p>
 
-      <h2>1. Toplanan Veriler</h2>
-      <ul>
-        <li><strong>Misafir hesap kimliği:</strong> Uygulama ilk açılışta cihazınızda rastgele bir kimlik üretir. Oyun hesabınız bu kimlikle eşleşir; adınız, e-postanız veya telefon numaranız istenmez.</li>
-        <li><strong>Oyun verileri:</strong> akvaryumlarınız, balıklarınız, süsleriniz, coin ve XP miktarı, günlük ödül ve görev ilerlemesi, balıklara verdiğiniz isimler.</li>
-        <li><strong>Hesap bağlama (isteğe bağlı):</strong> İlerlemenizi korumak için Google (veya Apple) ile giriş yaparsanız, sağlayıcının size verdiği hesap kimliği ve e-posta adresiniz saklanır. Şifreniz hiçbir zaman bize ulaşmaz.</li>
-        <li><strong>Reklam verileri:</strong> reklam kimliği (GAID/IDFA), cihaz modeli, işletim sistemi, dil, ülke ve bağlantı türü gibi teknik bilgiler ile reklam gösterim ve etkileşim verileri. Bunlar reklam ortaklarımızın SDK'ları tarafından toplanır.</li>
-        <li><strong>Teknik veriler:</strong> sunucuya yapılan isteklerde IP adresiniz güvenlik ve kötüye kullanımı önleme amacıyla işlenebilir.</li>
-      </ul>
+<p>Aquarium Neo bir akvaryum simülasyon oyunudur. Bu sayfa oyunun hangi
+verileri topladığını, neden topladığını ve nasıl silebileceğinizi anlatır.</p>
 
-      <h2>2. Verilerin Kullanım Amacı</h2>
-      <ul>
-        <li>Oyun ilerlemenizin kaydedilmesi ve cihazlar arasında geri yüklenmesi</li>
-        <li>Ödüllü reklamların gösterilmesi ve oyun içi ödüllerin verilmesi</li>
-        <li>Reklam performansının ölçülmesi ve (izin verdiyseniz) kişiselleştirilmiş reklam</li>
-        <li>Hile, kötüye kullanım ve güvenlik olaylarının tespiti</li>
-      </ul>
-      <p>Verilerinizi satmayız.</p>
+<p><strong>Oyun hesap açmadan oynanır.</strong> Açılışta giriş istenmez.
+Hesap yalnızca ilerlemenizi telefon değiştirdiğinizde ya da uygulamayı
+sildiğinizde kurtarmak için vardır.</p>
 
-      <h2>3. Üçüncü Taraflarla Paylaşım</h2>
-      <p>Aşağıdaki hizmet sağlayıcılar verileri kendi gizlilik politikaları çerçevesinde işler:</p>
-      <ul>
-        <li><strong>Unity LevelPlay (ironSource):</strong> reklam aracılığı (mediation) ve reklam gösterimi. <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Gizlilik Politikası</a></li>
-        <li><strong>Google AdMob ve Kullanıcı Mesajlaşma Platformu (UMP):</strong> reklam gösterimi ve rıza yönetimi. <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></li>
-        <li><strong>Google ile Giriş / Apple ile Giriş:</strong> yalnızca hesabınızı bağlamayı seçerseniz kimliğinizi doğrulamak için.</li>
-      </ul>
+<h2>1. Toplanan veriler</h2>
 
-      <h2>4. Reklam ve Rıza (GDPR / AB Uyumu)</h2>
-      <p>Avrupa Ekonomik Alanı (AEA), Birleşik Krallık ve İsviçre'deki kullanıcılardan Google'ın Kullanıcı Mesajlaşma Platformu (UMP) aracılığıyla rıza alırız. Rıza vermezseniz size yalnızca kişiselleştirilmemiş reklamlar gösterilir. Reklam kimliğinizi cihazınızın ayarlarından sıfırlayabilir veya kişiselleştirilmiş reklamları kapatabilirsiniz.</p>
-      <p>Reklamlar yalnızca siz "Reklam izle" seçeneğine dokunduğunuzda gösterilir; oyun akışını kesen zorunlu reklam yoktur.</p>
+<table>
+  <tr><th>Veri</th><th>Ne zaman</th><th>Niçin</th></tr>
+  <tr>
+    <td><strong>Cihaz kimliği</strong> — uygulamanın ürettiği rastgele bir numara (UUID)</td>
+    <td>İlk açılışta</td>
+    <td>Akvaryumunuzu sizin cihazınıza bağlamak. Bu numara telefonun donanım
+        kimliği <em>değildir</em>, telefondan okunmaz, uygulama içinde üretilir
+        ve uygulama silinince gider.</td>
+  </tr>
+  <tr>
+    <td><strong>Platform ve uygulama sürümü</strong> (örn. "android", "1.0")</td>
+    <td>Her girişte</td>
+    <td>Hangi sürümde hata olduğunu anlamak.</td>
+  </tr>
+  <tr>
+    <td><strong>Oyun ilerlemesi</strong> — coin, seviye, balıklar, akvaryumlar, süsler, görevler, başarımlar</td>
+    <td>Oynadıkça</td>
+    <td>Oyunun kendisi. Sunucuda saklanır ki telefonu kapatıp açtığınızda
+        kaldığınız yerden devam edin.</td>
+  </tr>
+  <tr>
+    <td><strong>E-posta adresiniz</strong> ve sağlayıcının verdiği kullanıcı numarası</td>
+    <td><em>Yalnızca</em> Google veya Apple ile giriş yaparsanız</td>
+    <td>Hesabınızı tanımak ve ilerlemenizi yeni bir telefonda geri
+        getirmek. E-posta yalnızca "hangi hesapla bağlısın" bilgisini
+        göstermek için tutulur; pazarlama amaçlı kullanılmaz, e-posta
+        gönderilmez.</td>
+  </tr>
+  <tr>
+    <td><strong>Reklam kimliği</strong> (Android'de GAID)</td>
+    <td>Ödüllü reklam gösterilirken</td>
+    <td>Reklam ağlarının reklam seçmesi ve sahtekârlığı önlemesi. Bu veriyi
+        biz saklamıyoruz; reklam sağlayıcısı okuyor (bkz. bölüm 3).</td>
+  </tr>
+  <tr>
+    <td><strong>Sunucu kayıtları</strong> — IP adresi, zaman, istek adresi, tarayıcı/uygulama tanıtıcısı</td>
+    <td>Her istekte</td>
+    <td>Güvenlik, kötüye kullanımı engelleme ve istek sınırlama. IP adresi
+        oyun hesabınıza bağlanmaz, ayrı bir teknik kayıtta durur.</td>
+  </tr>
+</table>
 
-      <h2>5. Cihazda Saklanan Veriler</h2>
-      <p>Misafir hesap kimliğiniz, oturum jetonunuz ve oyun önbelleği cihazınızın yerel depolama alanında (AsyncStorage) saklanır. Reklam SDK'ları cihaz tanımlayıcılarını ve rıza tercihlerinizi yerel olarak saklayabilir.</p>
+<div class="box">
+  <strong>Toplamadığımız şeyler:</strong> ad-soyad, telefon numarası, konum,
+  rehber, fotoğraf, mikrofon, kamera, SMS ve arama kayıtları. Uygulama bu
+  izinlerin hiçbirini istemiyor. Oyunun istediği tek izin
+  <code>VIBRATE</code> (titreşim) ve <code>INTERNET</code>.
+</div>
 
-      <h2>6. Veri Saklama ve Hesap Silme</h2>
-      <p>Oyun verileriniz hesabınız var olduğu sürece saklanır. Uygulamayı silmek sunucudaki verilerinizi silmez.</p>
-      <p>Hesabınızın ve ilişkili tüm verilerin silinmesini istemek için <a href="mailto:support@detectiveneo.com?subject=Aquarium%20Neo%20hesap%20silme">support@detectiveneo.com</a> adresine "Aquarium Neo hesap silme" konulu bir e-posta gönderin. Hesabınızı Google/Apple ile bağladıysanız bağlı e-posta adresinizi belirtin. Bağlanmamış misafir hesaplar adınızı, e-postanızı veya iletişim bilginizi içermez. Talebiniz 30 gün içinde yerine getirilir; yasal yükümlülükler gerektirmedikçe hiçbir veri saklanmaz.</p>
+<h2>2. Verileri kimlerle paylaşıyoruz</h2>
 
-      <h2>7. Uluslararası Aktarım</h2>
-      <p>Sunucularımız yurt dışındaki veri merkezlerinde barındırılabilir. Aktarımlar uygun güvenlik önlemleriyle gerçekleştirilir.</p>
+<p>Oyun verilerinizi satmıyoruz. Aşağıdaki hizmetler oyunun çalışması için
+gereklidir ve kendi gizlilik politikalarına tabidir:</p>
 
-      <h2>8. Haklarınız</h2>
-      <p>Kişisel verilerinize erişme, düzeltme, silme ve taşıma talep etme; rızanızı geri çekme ve işlemeye itiraz etme haklarına sahipsiniz (KVKK ve GDPR kapsamında).</p>
-      <p>Talepler için: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
+<ul>
+  <li><strong>Unity LevelPlay / ironSource</strong> — ödüllü reklamları
+      gösteren aracı. Reklam kimliğinizi ve reklamın gösterildiği cihaz
+      bilgilerini işler. Aracı, reklamı dolduran diğer reklam ağlarına da
+      bu bilgiyi aktarabilir.</li>
+  <li><strong>Google</strong> — Google ile giriş (kimlik doğrulama) ve
+      Avrupa'daki oyunculara reklam rızası formunu gösteren
+      User Messaging Platform.</li>
+  <li><strong>Apple</strong> — Apple ile giriş (kimlik doğrulama).</li>
+  <li><strong>Sunucu barındırma</strong> — oyunun sunucusu bir bulut
+      sağlayıcıda çalışır; veriler orada saklanır.</li>
+</ul>
 
-      <h2>9. Çocukların Gizliliği</h2>
-      <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve bilerek 13 yaş altındaki çocuklardan kişisel veri toplamaz. Böyle bir verinin toplandığını fark edersek sileriz.</p>
+<h2>3. Reklamlar ve rıza</h2>
 
-      <h2>10. Politika Değişiklikleri</h2>
-      <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır; önemli değişiklikleri uygulama içinde duyururuz.</p>
+<p>Oyunda yalnızca <strong>ödüllü reklam</strong> vardır: reklamı siz
+istediğinizde, karşılığında coin kazanmak için izlersiniz. Araya giren
+(interstitial) ya da banner reklam yoktur.</p>
 
-      <div class="footer">
-        <p>&copy; 2026 Aquarium Neo. Tüm hakları saklıdır.</p>
-        <p>İletişim: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
-      </div>
-    </div>
+<p>Avrupa Birliği, Birleşik Krallık ve İsviçre'deki oyunculara, kişiselleştirilmiş
+reklam için ilk açılışta bir <strong>rıza formu</strong> gösterilir. Rıza
+vermezseniz oyun aynı şekilde çalışır; reklamlar kişiselleştirilmeden
+gösterilir. Rıza tercihinizi cihazınızın reklam ayarlarından değiştirebilirsiniz.</p>
 
-    <!-- ENGLISH -->
-    <div class="section-en">
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">Last updated: September 2026 &bull; Aquarium Neo</p>
+<p>Android'de reklam kimliğinizi <em>Ayarlar → Google → Reklamlar</em>
+bölümünden sıfırlayabilir ya da kişiselleştirmeyi tamamen kapatabilirsiniz.</p>
 
-      <p>This policy explains what data the Aquarium Neo mobile game (the "App") collects, how it is used, and what your rights are.</p>
+<h2>4. Çocuklar</h2>
 
-      <h2>1. Data We Collect</h2>
-      <ul>
-        <li><strong>Guest account identifier:</strong> On first launch the App generates a random identifier on your device. Your game account is tied to it; we do not ask for your name, email or phone number.</li>
-        <li><strong>Game data:</strong> your aquariums, fish, decorations, coins and XP, daily reward and quest progress, and names you give your fish.</li>
-        <li><strong>Account linking (optional):</strong> If you sign in with Google (or Apple) to protect your progress, we store the account identifier issued by that provider and your email address. Your password never reaches us.</li>
-        <li><strong>Advertising data:</strong> advertising identifier (GAID/IDFA), technical information such as device model, operating system, language, country and connection type, and ad impression and interaction data. These are collected by our advertising partners' SDKs.</li>
-        <li><strong>Technical data:</strong> your IP address may be processed in requests to our servers for security and abuse prevention.</li>
-      </ul>
+<p>Aquarium Neo <strong>çocuklara yönelik değildir</strong> ve 13 yaşın
+altındaki kullanıcılardan bilerek veri toplamaz. 13 yaşın altındaki bir
+çocuğun veri gönderdiğini fark ederseniz aşağıdaki adresten bize yazın,
+kaydı sileriz.</p>
 
-      <h2>2. How We Use Your Data</h2>
-      <ul>
-        <li>Saving your game progress and restoring it across devices</li>
-        <li>Showing rewarded ads and granting in-game rewards</li>
-        <li>Measuring ad performance and (if you consent) personalized advertising</li>
-        <li>Detecting cheating, abuse and security incidents</li>
-      </ul>
-      <p>We do not sell your data.</p>
+<h2>5. Verilerin saklanma süresi</h2>
 
-      <h2>3. Third-Party Sharing</h2>
-      <p>The following service providers process data under their own privacy policies:</p>
-      <ul>
-        <li><strong>Unity LevelPlay (ironSource):</strong> ad mediation and ad serving. <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a></li>
-        <li><strong>Google AdMob and User Messaging Platform (UMP):</strong> ad serving and consent management. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-        <li><strong>Sign in with Google / Sign in with Apple:</strong> only to verify your identity if you choose to link your account.</li>
-      </ul>
+<ul>
+  <li><strong>Oyun verisi ve hesap:</strong> siz silene kadar. Uzun süre
+      girilmeyen hesaplar için otomatik bir silme uygulanmıyor.</li>
+  <li><strong>Sunucu kayıtları (IP dahil):</strong>
+      <strong>30</strong> gün sonunda silinir.</li>
+</ul>
 
-      <h2>4. Advertising and Consent (GDPR / EU Compliance)</h2>
-      <p>For users in the European Economic Area (EEA), the United Kingdom and Switzerland, we collect consent through Google's User Messaging Platform (UMP). If you do not consent, you will only be shown non-personalized ads. You can reset your advertising ID or opt out of personalized ads in your device settings.</p>
-      <p>Ads are shown only when you tap a "Watch ad" option; there are no forced ads interrupting gameplay.</p>
+<h2>6. Hesabınızı ve verilerinizi silme</h2>
 
-      <h2>5. Data Stored on Your Device</h2>
-      <p>Your guest identifier, session token and game cache are stored in your device's local storage (AsyncStorage). Ad SDKs may store device identifiers and your consent choices locally.</p>
+<p>İki yolu var, ikisi de aynı sonucu verir — <strong>veriniz dondurulmaz,
+silinir</strong>:</p>
 
-      <h2>6. Data Retention and Account Deletion</h2>
-      <p>Your game data is kept for as long as your account exists. Uninstalling the App does not delete your data from our servers.</p>
-      <p>To request deletion of your account and all associated data, email <a href="mailto:support@detectiveneo.com?subject=Aquarium%20Neo%20account%20deletion">support@detectiveneo.com</a> with the subject "Aquarium Neo account deletion". Include your linked email address if you signed in with Google/Apple. Unlinked guest accounts contain no name, email or contact information. Requests are completed within 30 days; no data is retained unless required by law.</p>
+<ul>
+  <li><strong>Uygulamadan:</strong> Ayarlar (⚙️) → <em>Hesabımı sil</em>.
+      İki onay ekranından sonra hesabınız, akvaryumunuz, balıklarınız,
+      görev ve başarım kayıtlarınız sunucudan kalıcı olarak silinir. Oyun
+      sıfırdan yeni bir misafir hesabıyla açılır.</li>
+  <li><strong>Web'den:</strong>
+      <a href="https://halitdip.github.io/aquarium-hesap-silme.html">hesap silme talep sayfası</a> üzerinden.</li>
+</ul>
 
-      <h2>7. International Transfers</h2>
-      <p>Our servers may be hosted in data centers outside your country. Transfers are carried out with appropriate safeguards.</p>
+<p>Silme anında gerçekleşir ve geri alınamaz. Yalnızca güvenlik amaçlı
+sunucu kayıtları, yukarıdaki saklama süresi boyunca durmaya devam eder.</p>
 
-      <h2>8. Your Rights</h2>
-      <p>You have the right to access, correct, delete and port your personal data, and to withdraw consent and object to processing (under GDPR and applicable local law).</p>
-      <p>For requests: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
+<h2>7. Haklarınız</h2>
 
-      <h2>9. Children's Privacy</h2>
-      <p>The App is not directed at children under 13 and does not knowingly collect personal data from children under 13. If we learn that such data has been collected, we will delete it.</p>
+<p>Bulunduğunuz ülkenin mevzuatına göre (Türkiye'de KVKK, AB'de GDPR)
+verilerinize erişme, düzeltilmesini ve silinmesini isteme hakkınız var.
+Talebinizi aşağıdaki e-posta adresine yazabilirsiniz.</p>
 
-      <h2>10. Policy Changes</h2>
-      <p>We may update this policy from time to time. The current version is always published on this page; significant changes will be announced in the App.</p>
+<h2>8. Değişiklikler</h2>
 
-      <div class="footer">
-        <p>&copy; 2026 Aquarium Neo. All rights reserved.</p>
-        <p>Contact: <a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></p>
-      </div>
-    </div>
-  </div>
+<p>Bu politika değişirse bu sayfadaki "Son güncelleme" tarihi değişir. Önemli
+bir değişiklik olursa uygulama içinde bildirilir.</p>
 
-  <script>
-    function showLang(lang) {
-      document.querySelector('.section-tr').style.display = lang === 'tr' ? 'block' : 'none';
-      document.querySelector('.section-en').style.display = lang === 'en' ? 'block' : 'none';
-      document.getElementById('btn-tr').style.color = lang === 'tr' ? '#ffd54a' : '#7fe3ff';
-      document.getElementById('btn-tr').style.fontWeight = lang === 'tr' ? 'bold' : 'normal';
-      document.getElementById('btn-en').style.color = lang === 'en' ? '#ffd54a' : '#7fe3ff';
-      document.getElementById('btn-en').style.fontWeight = lang === 'en' ? 'bold' : 'normal';
-    }
-    if ((navigator.language || '').toLowerCase().indexOf('tr') !== 0) showLang('en');
-  </script>
+<h2>9. İletişim</h2>
+
+<p>
+
+  E-posta: <strong><a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></strong><br>
+  Geliştirici: <strong>Detective Neo</strong>
+</p>
+
+<hr>
+
+<h1 id="english">Aquarium Neo — Privacy Policy</h1>
+<p class="sub">Last updated: 23 September 2026</p>
+
+<p>Aquarium Neo is an aquarium simulation game. This page explains what data
+the game collects, why, and how you can delete it.</p>
+
+<p><strong>The game is playable without an account.</strong> You are never
+asked to sign in at launch. An account exists only to recover your progress
+if you change phones or reinstall the app.</p>
+
+<h2>1. Data we collect</h2>
+
+<table>
+  <tr><th>Data</th><th>When</th><th>Why</th></tr>
+  <tr>
+    <td><strong>Device identifier</strong> — a random number (UUID) generated by the app</td>
+    <td>On first launch</td>
+    <td>To tie your aquarium to your device. This is <em>not</em> a hardware
+        identifier; it is generated inside the app, never read from the phone,
+        and disappears when the app is uninstalled.</td>
+  </tr>
+  <tr>
+    <td><strong>Platform and app version</strong> (e.g. "android", "1.0")</td>
+    <td>On each sign-in</td>
+    <td>To know which version a bug came from.</td>
+  </tr>
+  <tr>
+    <td><strong>Game progress</strong> — coins, level, fish, tanks, decorations, quests, achievements</td>
+    <td>As you play</td>
+    <td>The game itself. Stored on the server so you resume where you left off.</td>
+  </tr>
+  <tr>
+    <td><strong>Your email address</strong> and the user id issued by the provider</td>
+    <td><em>Only</em> if you sign in with Google or Apple</td>
+    <td>To recognise your account and restore your progress on a new phone.
+        The email is kept only to show you which account you are linked to; it
+        is not used for marketing and we send no email.</td>
+  </tr>
+  <tr>
+    <td><strong>Advertising identifier</strong> (GAID on Android)</td>
+    <td>When a rewarded ad is shown</td>
+    <td>So ad networks can select ads and prevent fraud. We do not store it;
+        the ad provider reads it (see section 2).</td>
+  </tr>
+  <tr>
+    <td><strong>Server logs</strong> — IP address, timestamp, request path, user agent</td>
+    <td>On every request</td>
+    <td>Security, abuse prevention and rate limiting. The IP address is not
+        linked to your game account; it sits in a separate technical log.</td>
+  </tr>
+</table>
+
+<div class="box">
+  <strong>What we do not collect:</strong> your name, phone number, location,
+  contacts, photos, microphone, camera, SMS or call logs. The app requests
+  none of those permissions. The only permissions it declares are
+  <code>VIBRATE</code> and <code>INTERNET</code>.
+</div>
+
+<h2>2. Who we share data with</h2>
+
+<p>We do not sell your data. The following services are needed for the game
+to work and are governed by their own privacy policies:</p>
+
+<ul>
+  <li><strong>Unity LevelPlay / ironSource</strong> — the mediation layer that
+      serves rewarded ads. It processes your advertising identifier and device
+      information, and may pass it to the ad networks that fill the ad.</li>
+  <li><strong>Google</strong> — Sign in with Google (authentication) and the
+      User Messaging Platform that shows the ad consent form to players in
+      Europe.</li>
+  <li><strong>Apple</strong> — Sign in with Apple (authentication).</li>
+  <li><strong>Server hosting</strong> — the game server runs at a cloud
+      provider, where the data is stored.</li>
+</ul>
+
+<h2>3. Ads and consent</h2>
+
+<p>The game contains <strong>rewarded ads only</strong>: you watch one when
+you choose to, in exchange for coins. There are no interstitial or banner
+ads.</p>
+
+<p>Players in the European Union, the United Kingdom and Switzerland are
+shown a <strong>consent form</strong> for personalised advertising on first
+launch. If you decline, the game works exactly the same; ads are shown
+without personalisation. You can change your choice in your device's ad
+settings.</p>
+
+<p>On Android you can reset your advertising identifier, or turn
+personalisation off entirely, under <em>Settings → Google → Ads</em>.</p>
+
+<h2>4. Children</h2>
+
+<p>Aquarium Neo is <strong>not directed to children</strong> and does not
+knowingly collect data from anyone under 13. If you believe a child under 13
+has sent us data, write to the address below and we will delete the record.</p>
+
+<h2>5. How long we keep data</h2>
+
+<ul>
+  <li><strong>Game data and account:</strong> until you delete it. We do not
+      automatically delete long-inactive accounts.</li>
+  <li><strong>Server logs (including IP):</strong>
+      deleted after <strong>30</strong> days.</li>
+</ul>
+
+<h2>6. Deleting your account and data</h2>
+
+<p>There are two routes, both with the same result — your data is
+<strong>deleted, not frozen</strong>:</p>
+
+<ul>
+  <li><strong>In the app:</strong> Settings (⚙️) → <em>Delete my account</em>.
+      After two confirmation screens, your account, aquarium, fish, quest and
+      achievement records are permanently deleted from the server. The game
+      starts over with a new guest account.</li>
+  <li><strong>On the web:</strong> via the
+      <a href="https://halitdip.github.io/aquarium-hesap-silme.html">account deletion request page</a>.</li>
+</ul>
+
+<p>Deletion is immediate and cannot be undone. Only the security-related
+server logs remain, for the retention period stated above.</p>
+
+<h2>7. Your rights</h2>
+
+<p>Depending on where you live (KVKK in Türkiye, GDPR in the EU) you have the
+right to access, correct and delete your data. Write to the email address
+below.</p>
+
+<h2>8. Changes</h2>
+
+<p>If this policy changes, the "Last updated" date on this page changes. We
+will notify you in the app if the change is significant.</p>
+
+<h2>9. Contact</h2>
+
+<p>
+  Email: <strong><a href="mailto:support@detectiveneo.com">support@detectiveneo.com</a></strong><br>
+  Developer: <strong>Detective Neo</strong>
+</p>
+
 </body>
 </html>
